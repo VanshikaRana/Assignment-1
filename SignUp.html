@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Login Form </title>
+<style>
+
+body
+{
+background-image:url(https://images.pexels.com/photos/695688/pexels-photo-695688.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+background-size: cover;
+background-attachment: fixed;
+}
+.content{
+background :rgba(255,0,0,0.3);
+width:25%;
+padding: 25px;
+margin: 100px auto;
+font-family: calibri;
+}
+
+form
+{
+border:2px;
+}
+@media screen and (max-width: 600px) {
+  div {
+    background-color: lightblue;
+background-repeat: no-repeat;
+background-size: cover;
+color: #1a3300;
+font family: Arial Black;
+}
+}
+
+</style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<center>
+<body>
+<div class="content">
+
+    <div class="loginbox">
+    <img src="" class="avatar">
+        <h1><font color="purple">SignUp</font></h1>
+        <form>
+<p><h2>Please fill in this form to create an account.</h2></p>
+<hr>
+  <label for="usrname"><h2>Username</h2></label>
+    <input type="text" id="usrname" name="usrname"placeholder="Enter Username" required size="60">
+
+    <label for="psw"><h2>Password</h2></label>
+  <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Enter Password"required size="60">
+
+ <label for="moblie number"><h2>Moblie Number</h2></label>
+ <input type=" pattern="(0/91)?[7-9][0-9]{9}" title="Please enter a vaild Moblie Number" name="moblie number" placeholder="Moblie Number"required size="60" >
+
+
+ <label for="email"><h2>Email</h2></label>
+ <input type=" pattern=".+@gmail.com" title="Please enter a vaild email-address" name="email" placeholder="Enter Email"required size="60"><br><br>
+<input type="submit"   name="submit" value="submit">
+ 
+</form>
+       
+    </div>
+</div>
+
+</body>
+</center>
+</head>
+</html>
